@@ -1,0 +1,15 @@
+@if (loggedIn) {
+    <send-message (send)="send($event)" />
+} @else {
+    <input type="text" [(ngModel)]="username" />
+    <button (click)="login()">Connexion</button>
+}
+
+@for(item of messages; track $index) {
+    <div @fadeIn class="m-4 p-4 bg-slate-200 rounded" [ngClass]="item.username == username ? 'ml-14 bg-sky-200' : 'mr-14'">
+        <p class="font-bold">{{ item.username }}</p>
+        <p class="italic">{{ item.datetime | date:"dd/MM/YYYY à HH:mm:ss"}}</p>
+        <p>{{ 23 | currency : "EUR" }}</p>
+        <p [innerHTML]="item.content | parseLink"></p>
+    </div>
+}

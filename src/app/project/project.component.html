@@ -1,0 +1,50 @@
+<!-- @for(item of messages; track $index) {
+    <div @fadeIn class="m-4 p-4 bg-slate-200 rounded" [ngClass]="item.username == username ? 'ml-14 bg-sky-200' : 'mr-14'">
+        <p class="font-bold">{{ item.username }}</p>
+        <p class="italic">{{ item.datetime | date:"dd/MM/YYYY à HH:mm:ss"}}</p>
+        <p>{{ 23 | currency : "EUR" }}</p>
+        <p [innerHTML]="item.content | parseLink"></p>
+    </div>
+} -->
+
+<!-- <h1>{{ project.title }}</h1>
+
+<input type="search" name="" id="">
+
+@for(item of tasks; track $index) {
+    <div class="">
+        <p class="font-bold">{{ item.username }}</p>
+        <p class="italic">{{ item.datetime | date:"dd/MM/YYYY à HH:mm:ss"}}</p>
+        <p>{{ 23 | currency : "EUR" }}</p>
+        <p [innerHTML]="item.content | parseLink"></p>
+    </div>
+} -->
+
+
+<h1>Titre du projet</h1>
+
+<div class="flex p-4">
+    <input type="search" name="" id="" class="w-[90vw]">
+    <button class="mx-2">Discard</button>
+    <button class="mx-2">Save</button>
+</div>
+
+
+<div class="w-full p-4 flex h-full bg-slate-300">
+    <div class="w-1/5 bg-slate-400 mx-2">
+        <span class="mx-2 w-4 h-4 bg-slate-200 border-yellow-600 border-2 rounded-e-full inline-block"></span>
+        <span class="">0 / 5</span>
+        <h3 class="font-bold inline mx-2">statut 1</h3>
+        <p>This is actively being worked on</p>
+    </div>
+    <div class="w-1/5 bg-slate-400 h-full ml-2">
+        <span class="w-8 bg-slate-200 border-yellow-600 border-2 rounded-e-full inline"></span>
+        <h3>statut 2</h3>
+        <p>This item hasn"t been started</p>
+    </div>
+    <div class="w-1/5 bg-slate-400 h-full ml-2">
+        <span class="w-8 bg-slate-200 border-yellow-600 border-2 rounded-e-full inline"></span>
+        <h3>statut 3</h3>
+        <p>This has been completed</p>
+    </div>
+</div>
