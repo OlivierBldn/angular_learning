@@ -21,30 +21,374 @@
 } -->
 
 
-<h1>Titre du projet</h1>
-
-<div class="flex p-4">
-    <input type="search" name="" id="" class="w-[90vw]">
-    <button class="mx-2">Discard</button>
-    <button class="mx-2">Save</button>
-</div>
-
-
-<div class="w-full p-4 flex h-full bg-slate-300">
-    <div class="w-1/5 bg-slate-400 mx-2">
-        <span class="mx-2 w-4 h-4 bg-slate-200 border-yellow-600 border-2 rounded-e-full inline-block"></span>
-        <span class="">0 / 5</span>
-        <h3 class="font-bold inline mx-2">statut 1</h3>
-        <p>This is actively being worked on</p>
-    </div>
-    <div class="w-1/5 bg-slate-400 h-full ml-2">
-        <span class="w-8 bg-slate-200 border-yellow-600 border-2 rounded-e-full inline"></span>
-        <h3>statut 2</h3>
-        <p>This item hasn"t been started</p>
-    </div>
-    <div class="w-1/5 bg-slate-400 h-full ml-2">
-        <span class="w-8 bg-slate-200 border-yellow-600 border-2 rounded-e-full inline"></span>
-        <h3>statut 3</h3>
-        <p>This has been completed</p>
+<div class="w-full max-w-full h-full ml-auto mr-auto grow p-0 bg-gray-100">
+    <div class="flex flex-col h-full">
+        <div class="navigation flex flex-shrink-0 mt-0 md:px-8 py-4 bg-rgb-1-4-9 items-start relative justify-end border-b-0 flex-wrap-reverse z-9">
+            <div>
+                <div class="flex flex-row items-center min-w-0 gap-1 pr-2 cursor-default">
+                    <div class="flex flex-row items-center gap-1 cursor-pointer">
+                        <svg aria-hidden="true" focusable="false" role="img" class="Octicon-sc-9kayk9-0 cJyVQt text-gray-500 inline-block select-none align-text-bottom overflow-visible" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M4 4a4 4 0 0 1 8 0v2h.25c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 12.25 15h-8.5A1.75 1.75 0 0 1 2 13.25v-5.5C2 6.784 2.784 6 3.75 6H4Zm8.25 3.5h-8.5a.25.25 0 0 0-.25.25v5.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25ZM10.5 6V4a2.5 2.5 0 1 0-5 0v2Z"></path></svg>
+                        <h1 class="text-lg overflow-hidden truncate whitespace-nowrap mt-0 mb-0 font-semibold my-1">OlivierBldn's untitled project</h1>
+                        <button class="bEwsCa bg-transparent border border-transparent rounded-md shadow-none flex items-center justify-between min-w-max w-auto h-7 text-sm text-gray-200 gap-2 transition-colors duration-80 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 hover:text-gray-100 hover:bg-transparent hover:border-blue-500 hover:ring-2 hover:ring-opacity-50" aria-label="Edit project name">
+                            <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-pencil inline-block select-none align-text-bottom overflow-visible fill-current" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1"></div>
+            <div class="flex justify-end items-center flex-wrap gap-2">
+                <div class="inline-flex align-middle isolate flex-shrink-0">
+                    <span class="mr-[-1px] relative inline-block">
+                        <a href="" class="px-2 font-medium text-base cursor-pointer appearance-none select-none text-center flex items-center justify-between h-8 min-w-max text-gray-700 border border-gray-300 transition-colors duration-300 ease-in-out rounded-tl-md rounded-bl-md">
+                            <span class="flex-auto grid grid-cols-[min-content,auto,min-content] grid-areas-[leadingVisual text trailingVisual] place-items-center font-inherit font-medium text-base cursor-pointer select-none text-center text-gray-700">
+                                <span class="grid-area:text leading-[1.42857] whitespace-nowrap">
+                                    <svg aria-hidden="true" focusable="false" role="img" class="Octicon-sc-9kayk9-0 inline-block select-none align-text-bottom overflow-visible w-4 h-4" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.28 9.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.25-3.25a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path></svg>
+                                </span>
+                            </span>
+                        </a>
+                    </span>
+                    <span class="mr-[-1px] relative rounded-none inline-block">
+                        <button class="px-2 font-medium text-base cursor-pointer appearance-none select-none text-center flex items-center justify-between h-8 min-w-max text-gray-700 border border-gray-300 transition-colors duration-300 ease-in-out">
+                            <span class="flex-auto grid grid-cols-[min-content,auto,min-content] grid-areas-[leadingVisual text trailingVisual] place-items-center font-inherit font-medium text-base cursor-pointer select-none text-center text-gray-700">
+                                <span class="grid-area:text leading-[1.42857] whitespace-nowrap">
+                                    <svg aria-hidden="true" focusable="false" role="img" class="Octicon-sc-9kayk9-0 inline-block select-none align-text-bottom overflow-visible w-4 h-4" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="m4.177 7.823 2.396-2.396A.25.25 0 0 1 7 5.604v4.792a.25.25 0 0 1-.427.177L4.177 8.177a.25.25 0 0 1 0-.354Z"></path><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25H9.5v-13Zm12.5 13a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25H11v13Z"></path></svg>
+                                </span>
+                            </span>
+                        </button>
+                    </span>
+                    <span class="mr-[-1px] relative rounded-none rounded-tr-6 rounded-br-6 inline-block">
+                        <button class="px-2 font-medium text-base cursor-pointer appearance-none select-none text-center flex items-center justify-between h-8 min-w-max text-gray-700 border border-gray-300 transition-colors duration-300 ease-in-out rounded-tr-md rounded-br-md">
+                            <span class="flex-auto grid grid-cols-[min-content,auto,min-content] grid-areas-[leadingVisual text trailingVisual] place-items-center font-inherit font-medium text-base cursor-pointer select-none text-center text-gray-700">
+                                <span class="grid-area:text leading-[1.42857] whitespace-nowrap">
+                                    <svg aria-hidden="true" focusable="false" role="img" class="Octicon-sc-9kayk9-0 inline-block select-none align-text-bottom overflow-visible w-4 h-4" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>
+                                </span>
+                            </span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="main flex flex-col flex-1 relative z-1 h-full">
+            <div class="flex flex-col flex-1 relative z-10 h-full">
+                <div class="w-fit-content pl-6 md:pl-8">
+                    <div class="isolation-isolate">
+                        <nav class="block border-b-0 mt-0">
+                            <div class="overflow-hidden flex">
+                                <a href="#" class="topic selected">
+                                    <div class="flex max-w-full w-full gap-2 relative text-sm leading-5">
+                                        <div class="topic-image selected">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="topic-svg" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0ZM1.5 1.75v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25ZM11.75 3a.75.75 0 0 1 .75.75v7.5a.75.75 0 0 1-1.5 0v-7.5a.75.75 0 0 1 .75-.75Zm-8.25.75a.75.75 0 0 1 1.5 0v5.5a.75.75 0 0 1-1.5 0ZM8 3a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 3Z"></path></svg>
+                                        </div>
+                                        <div class="topic-title selected">
+                                            <span class="topic-title-text">Backlog</span>
+                                        </div>
+                                        <div class="topic-select selected">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-triangle-down inline-block select-none align-text-bottom overflow-visible" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="topic">
+                                    <div class="flex max-w-full w-full gap-2 relative text-sm leading-5">
+                                        <div class="topic-image">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="topic-svg" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0ZM1.5 1.75v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25ZM11.75 3a.75.75 0 0 1 .75.75v7.5a.75.75 0 0 1-1.5 0v-7.5a.75.75 0 0 1 .75-.75Zm-8.25.75a.75.75 0 0 1 1.5 0v5.5a.75.75 0 0 1-1.5 0ZM8 3a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 3Z"></path></svg>
+                                        </div>
+                                        <div class="topic-title">
+                                            <span class="topic-title-text">Priority board</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="topic">
+                                    <div class="flex max-w-full w-full gap-2 relative text-sm leading-5">
+                                        <div class="topic-image">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="Octicon-sc-9kayk9-0 jqOtMK" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z"></path></svg>
+                                        </div>
+                                        <div class="topic-title">
+                                            <span class="topic-title-text">Team items</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="topic">
+                                    <div class="flex max-w-full w-full gap-2 relative text-sm leading-5">
+                                        <div class="topic-image">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="Octicon-sc-9kayk9-0 ddnvSG" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M4.75 7a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5h-4.5ZM5 4.75A.75.75 0 0 1 5.75 4h5.5a.75.75 0 0 1 0 1.5h-5.5A.75.75 0 0 1 5 4.75ZM6.75 10a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5h-4.5Z"></path><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25Z"></path></svg>
+                                        </div>
+                                        <div class="topic-title">
+                                            <span class="topic-title-text">Roadmap</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="topic">
+                                    <div class="flex max-w-full w-full gap-2 relative text-sm leading-5">
+                                        <div class="topic-image">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="Octicon-sc-9kayk9-0 jqOtMK" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z"></path></svg>
+                                        </div>
+                                        <div class="topic-title">
+                                            <span class="topic-title-text">In review</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="topic">
+                                    <div class="flex max-w-full w-full gap-2 relative text-sm leading-5">
+                                        <div class="topic-image">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="Octicon-sc-9kayk9-0 jqOtMK" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z"></path></svg>
+                                        </div>
+                                        <div class="topic-title">
+                                            <span class="topic-title-text">My items</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <button class="button-topic">
+                                    <span class="flex max-w-full w-full gap-2 relative text-sm leading-5">
+                                        <span class="topic-image">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-plus inline-block select-none align-text-bottom overflow-visible" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg>
+                                        </span>
+                                        <span class="grid-area-text leading-relaxed whitespace-nowrap ml-2 text-gray-700 text-base">New view</span>
+                                    </span>
+                                </button> 
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col flex-1 relative z-10">
+                <div class="filter flex items-center p-4 col-span-1 row-span-2">
+                    <div class="flex flex-1 flex-row max-w-full relative z-4 gap-2 justify-between h-8">
+                        <div class="flex w-full items-center pl-3 pr-2 max-w-full flex-shrink-1 flex-grow-1 min-h-8 grid grid-cols-[auto,1fr,auto] gap-2 min-w-20 rounded-md border border-gray-300">
+                            <div>
+                                <svg aria-hidden="true" focusable="false" role="img" class="Octicon-sc-9kayk9-0 kbRydQ nline-block select-none align-text-bottom overflow-visible text-gray-700 w-4 h-4 current-color" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M.75 3h14.5a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1 0-1.5ZM3 7.75A.75.75 0 0 1 3.75 7h8.5a.75.75 0 0 1 0 1.5h-8.5A.75.75 0 0 1 3 7.75Zm3 4a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>
+                            </div>
+                            <div class="relative flex items-center z-2 h-full overflow-x-auto">
+                                <div class="absolute select-none whitespace-no-wrap break-words text-14 flex-1 w-full p-0 top-1/2 transform -translate-y-1/2"></div>
+                                <div class="min-w-full h-full">
+                                    <div class="font-normal text-sm leading-21 font-sans tracking-normal text-none absolute top-0 left-0 invisible h-0 overflow-scroll whitespace-pre"></div>
+                                    <div class="font-normal text-sm leading-21 font-sans tracking-normal text-none absolute top-0 left-0 invisible h-0 overflow-scroll whitespace-pre">Filter by keyword or by field</div>
+                                    <input id="filter-bar-input" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" aria-controls="search-suggestions-box" aria-label="Filter by keyword or by field" name="Filter" placeholder="Filter by keyword or by field" autocomplete="off" autocorrect="false" autocapitalize="false" spellcheck="false" data-testid="filter-bar-input" tabindex="0" class="Box-sc-g0xbh4-0 dAvhZg text-transparent font-inherit border-0 p-0 shadow-none flex w-full relative resize-none outline-none bg-transparent overflow-hidden min-w-full caret-text-gray-800 text-sm flex-1 h-full max-h-unset color-scheme-light" value="">
+                                </div>
+                            </div>
+                            <div class="flex items-center"></div>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <div class="items-center flex h-full gap-2">
+                                <button class="filtering-1 font-inherit font-semibold text-sm cursor-pointer select-none text-center flex items-center justify-between h-8 min-w-max-content text-gray-700 bg-gray-200 shadow-sm border rounded-md border border-solid border-gray-400 no-underline gap-1 transition-colors duration-80 ease-in-out px-2 h-7 text-sm">
+                                    <span class="flex-grow flex-shrink-0 flex-auto grid grid-cols-[min-content,auto,min-content] grid-rows-[auto] grid-areas-[leadingVisual,text,trailingVisual] items-center content-center justify-center text-sm">
+                                        <span class="line-height-[1.66667] grid-area-text whitespace-nowrap">Discard</span>
+                                    </span>
+                                </button>
+                                <button class="filtering-2 p-0 px-2 h-7 gap-1 text-sm font-inherit font-semibold cursor-pointer select-none text-center flex items-center justify-between h-8 min-w-max-content text-gray-700 bg-gray-200 shadow-sm border border-gray-300 rounded-md border border-solid border-gray-400 no-underline px-3 gap-2 transition-colors duration-80 ease-in-out">
+                                    <span class="flex-grow flex-shrink-0 flex-auto grid grid-cols-[min-content,auto,min-content] grid-rows-[auto] grid-areas-[leadingVisual,text,trailingVisual] items-center content-center justify-center">
+                                        <span class="line-height-[1.66667] grid-area-text whitespace-nowrap">Save</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content flex flex-col flex-1 overflow-y-hidden relative">
+                    <div class="flex-1 h-0 p-2 overflow-hidden relative flex">
+                        <!-- <div class="mr-2 w-[350px] min-w-[350px] flex flex-col overflow-hidden rounded-md bg-gray-200 transition-transform duration-75 border border-gray-300">
+                            <div class="flex-col flex-shrink-0 flex">
+                                <div class="bg-gray-200 items-start justify-between max-w-[350px] p-2 pl-4 pr-4 flex">
+                                    <div class="flex flex-wrap items-center max-w-[90%]">
+                                        <div class="h-24 mt-4 mb-4 overflow-hidden mr-2">
+                                            <span class="text-lg font-semibold leading-[24px] cursor-default max-w-full overflow-hidden whitespace-nowrap block truncate">No status</span>
+                                        </div>
+                                        <span class="inline-block px-2 py-1 text-xs font-semibold leading-4 rounded-full bg-opacity-20 bg-gray-400 text-gray-700 mr-2 mt-4 mb-4"></span>
+                                        <span class="absolute w-1 h-1 p-0 m-[-1px] overflow-hidden clip-rect(0 0 0 0) whitespace-nowrap border-0">&nbsp;(0)</span>
+                                        <span class="inline-flex items-center bg-transparent border border-gray-300 rounded-full font-semibold text-xs leading-4 whitespace-nowrap h-[20px] px-[7px] mr-2 mt-1 mb-1 text-gray-700">Estimate: 0</span>
+                                    </div>
+                                    <div class="bg-gray-200 items-center justify-center flex"></div>
+                                </div>
+                                <span class="mt-[-4px] pb-8 pl-16 pr-16 max-w-[350px] text-gray-700"></span>
+                                <div class="flex-col bg-gray-200 flex-grow overflow-y-auto relative p-1 pl-2 pr-2 scroll-padding-b-[7px]"></div>
+                            </div>
+                            <span class="mt-[-4px] pb-2 pl-4 pr-4 max-w-[350px] text-gray-700"></span>
+                            <div class="flex-col bg-gray-200 flex-grow overflow-y-auto relative p-1 sm:p-2 pl-2 sm:pl-4 pr-2 sm:pr-4 scroll-padding-b-7"></div>
+                            <button class="text-gray-700 flex pt-2 pb-2 w-full pl-1 pr-1 h-3 gap-2 font-inherit font-semibold cursor-pointer select-none text-center items-center justify-between min-w-max-content bg-transparent shadow-none rounded-md border border-transparent no-underline px-3 gap-2 transition-colors duration-80 ease-in-out">
+                                <span class="flex-grow-0 flex-shrink-1 flex-0 grid grid-cols-[min-content,auto,min-content] grid-rows-[auto] grid-areas-[leadingVisual,text,trailingVisual] items-center content-center justify-center text-gray-700">
+                                    <span class="mr-2 col-start-1 text-gray-700 flex pointer-events-none">
+                                        <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-plus inline-block select-none align-text-bottom overflow-visible fill-current w-4 h-4 text-gray-700 pointer-events-none" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg>
+                                    </span>
+                                    <span class="row-start-1 col-start-2 leading-[1.42857] whitespace-nowrap text-gray-700">Add item</span>
+                                </span>
+                            </button>
+                        </div> -->
+                        <div class="mr-2 w-[350px] min-w-[350px] flex flex-col overflow-hidden rounded-md bg-gray-200 transition-transform duration-75 border border-gray-300">
+                            <div class="flex-col flex-shrink-0 flex">
+                                <div class="bg-gray-200 items-start justify-between max-w-[350px] p-2 md:p-4 flex">
+                                    <div class="flex flex-wrap items-center max-w-[90%]">
+                                        <div class="border border-green-500 border-2 w-4 h-4 rounded-full flex-shrink-0 mr-2"></div>
+                                        <div class="h-6 mt-1 mb-1 overflow-hidden mr-2">
+                                            <span class="text-base font-semibold leading-6 overflow-hidden truncate whitespace-nowrap">Backlog</span>
+                                        </div>
+                                        <span class="inline-block px-2 py-1 text-xs font-semibold leading-4 rounded-full bg-opacity-20 bg-gray-500 text-gray-700 mr-2 mt-2 mb-2">0 / 5</span>                                        
+                                        <span class="absolute w-1 h-1 p-0 m-n1 overflow-hidden whitespace-no-wrap border-0">&nbsp;(0 / 5)</span>
+                                        <span class="inline-flex items-center bg-transparent border border-gray-300 rounded-full font-semibold text-xs leading-4 whitespace-no-wrap p-1 px-2 mr-2 mt-2 mb-2 text-gray-700">Estimate: 0</span>
+                                    </div>
+                                    <div class="bg-gray-200 items-center justify-center flex">
+                                        <button class="sticky right-0 mr-1 text-gray-700 w-7 h-7 grid place-content-center font-semibold text-xs font-sans cursor-pointer select-none text-center bg-transparent shadow-none rounded-md border-1 border-solid border-transparent transition-colors duration-80 hover:text-black">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-kebab-horizontal inline-block select-none align-text-bottom text-gray-700 fill-current w-4 h-4 px-2 py-1 text-xs font-semibold leading-4 gap-1 cursor-pointer" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="mt-[-4px] pb-2 pl-4 pr-4 max-w-[350px] text-gray-700">This item hasn't been started</span>
+                                <div class="flex-col bg-gray-200 flex-grow overflow-y-auto relative p-1 pl-2 pr-2 scroll-padding-b-[7px]"></div>
+                                <button class="text-gray-700 flex pt-2 pb-2 w-full pl-1 pr-1 h-3 gap-2 font-inherit font-semibold cursor-pointer select-none text-center items-center justify-between min-w-max-content bg-transparent shadow-none rounded-md border border-transparent no-underline px-3 gap-2 transition-colors duration-80 ease-in-out">
+                                    <span class="flex-grow-0 flex-shrink-1 flex-0 grid grid-cols-[min-content,auto,min-content] grid-rows-[auto] grid-areas-[leadingVisual,text,trailingVisual] items-center content-center justify-center text-gray-700">
+                                        <span class="mr-2 col-start-1 text-gray-700 flex pointer-events-none">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-plus inline-block select-none align-text-bottom overflow-visible fill-current w-4 h-4 text-gray-700 pointer-events-none" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg>
+                                        </span>
+                                        <span class="row-start-1 col-start-2 leading-[1.42857] whitespace-nowrap text-gray-700">Add item</span>
+                                    </span>
+                                </button>
+                            </div>
+                            <span class="mt-[-4px] pb-2 pl-4 pr-4 max-w-[350px] text-gray-700"></span>
+                            <div class="flex-col bg-gray-200 flex-grow overflow-y-auto relative p-1 pl-2 pr-2 scroll-padding-b-[7px]"></div>
+                            <button class="font-inherit font-semibold text-base cursor-pointer select-none text-center flex items-center justify-between min-w-[max-content] bg-transparent shadow-none rounded-md border border-transparent hover:text-gray-700 transition-all duration-300 ease-in-out p-4 h-[40px] gap-2 w-full focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-gray-300 text-gray-700"></button>
+                        </div>
+                        <div class="mr-2 w-[350px] min-w-[350px] flex flex-col overflow-hidden rounded-md bg-gray-200 transition-transform duration-75 border border-gray-300">
+                            <div class="flex-col flex-shrink-0 flex">
+                                <div class="bg-gray-200 items-start justify-between max-w-[350px] p-2 md:p-4 flex">
+                                    <div class="flex flex-wrap items-center max-w-[90%]">
+                                        <div class="border border-blue-600 border-2 w-4 h-4 rounded-full flex-shrink-0 mr-2"></div>
+                                        <div class="h-6 mt-1 mb-1 overflow-hidden mr-2">
+                                            <span class="text-base font-semibold leading-6 overflow-hidden truncate whitespace-nowrap">Ready</span>
+                                        </div>
+                                        <span class="inline-block px-2 py-1 text-xs font-semibold leading-4 rounded-full bg-opacity-20 bg-gray-500 text-gray-700 mr-2 mt-2 mb-2">0</span>                                        
+                                        <span class="absolute w-1 h-1 p-0 m-n1 overflow-hidden whitespace-no-wrap border-0">&nbsp;(0 / 5)</span>
+                                        <span class="inline-flex items-center bg-transparent border border-gray-300 rounded-full font-semibold text-xs leading-4 whitespace-no-wrap p-1 px-2 mr-2 mt-2 mb-2 text-gray-700">Estimate: 0</span>
+                                    </div>
+                                    <div class="bg-gray-200 items-center justify-center flex">
+                                        <button class="sticky right-0 mr-1 text-gray-700 w-7 h-7 grid place-content-center font-semibold text-xs font-sans cursor-pointer select-none text-center bg-transparent shadow-none rounded-md border-1 border-solid border-transparent transition-colors duration-80 hover:text-black">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-kebab-horizontal inline-block select-none align-text-bottom text-gray-700 fill-current w-4 h-4 px-2 py-1 text-xs font-semibold leading-4 gap-1 cursor-pointer" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="mt-[-4px] pb-2 pl-4 pr-4 max-w-[350px] text-gray-700">This is ready to be picked up</span>
+                                <div class="flex-col bg-gray-200 flex-grow overflow-y-auto relative p-1 pl-2 pr-2 scroll-padding-b-[7px]"></div>
+                                <button class="text-gray-700 flex pt-2 pb-2 w-full pl-1 pr-1 h-3 gap-2 font-inherit font-semibold cursor-pointer select-none text-center items-center justify-between min-w-max-content bg-transparent shadow-none rounded-md border border-transparent no-underline px-3 gap-2 transition-colors duration-80 ease-in-out">
+                                    <span class="flex-grow-0 flex-shrink-1 flex-0 grid grid-cols-[min-content,auto,min-content] grid-rows-[auto] grid-areas-[leadingVisual,text,trailingVisual] items-center content-center justify-center text-gray-700">
+                                        <span class="mr-2 col-start-1 text-gray-700 flex pointer-events-none">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-plus inline-block select-none align-text-bottom overflow-visible fill-current w-4 h-4 text-gray-700 pointer-events-none" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg>
+                                        </span>
+                                        <span class="row-start-1 col-start-2 leading-[1.42857] whitespace-nowrap text-gray-700">Add item</span>
+                                    </span>
+                                </button>
+                            </div>
+                            <span class="mt-[-4px] pb-2 pl-4 pr-4 max-w-[350px] text-gray-700"></span>
+                            <div class="flex-col bg-gray-200 flex-grow overflow-y-auto relative p-1 pl-2 pr-2 scroll-padding-b-[7px]"></div>
+                            <button class="font-inherit font-semibold text-base cursor-pointer select-none text-center flex items-center justify-between min-w-[max-content] bg-transparent shadow-none rounded-md border border-transparent hover:text-gray-700 transition-all duration-300 ease-in-out p-4 h-[40px] gap-2 w-full focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-gray-300 text-gray-700"></button>
+                        </div>
+                        <div class="mr-2 w-[350px] min-w-[350px] flex flex-col overflow-hidden rounded-md bg-gray-200 transition-transform duration-75 border border-gray-300">
+                            <div class="flex-col flex-shrink-0 flex">
+                                <div class="bg-gray-200 items-start justify-between max-w-[350px] p-2 md:p-4 flex">
+                                    <div class="flex flex-wrap items-center max-w-[90%]">
+                                        <div class="border border-yellow-800 border-2 w-4 h-4 rounded-full flex-shrink-0 mr-2"></div>
+                                        <div class="h-6 mt-1 mb-1 overflow-hidden mr-2">
+                                            <span class="text-base font-semibold leading-6 overflow-hidden truncate whitespace-nowrap">In progress</span>
+                                        </div>
+                                        <span class="inline-block px-2 py-1 text-xs font-semibold leading-4 rounded-full bg-opacity-20 bg-gray-500 text-gray-700 mr-2 mt-2 mb-2">0 / 3</span>                                        
+                                        <span class="absolute w-1 h-1 p-0 m-n1 overflow-hidden whitespace-no-wrap border-0">&nbsp;(0 / 3)</span>
+                                        <span class="inline-flex items-center bg-transparent border border-gray-300 rounded-full font-semibold text-xs leading-4 whitespace-no-wrap p-1 px-2 mr-2 mt-2 mb-2 text-gray-700">Estimate: 0</span>
+                                    </div>
+                                    <div class="bg-gray-200 items-center justify-center flex">
+                                        <button class="sticky right-0 mr-1 text-gray-700 w-7 h-7 grid place-content-center font-semibold text-xs font-sans cursor-pointer select-none text-center bg-transparent shadow-none rounded-md border-1 border-solid border-transparent transition-colors duration-80 hover:text-black">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-kebab-horizontal inline-block select-none align-text-bottom text-gray-700 fill-current w-4 h-4 px-2 py-1 text-xs font-semibold leading-4 gap-1 cursor-pointer" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="mt-[-4px] pb-2 pl-4 pr-4 max-w-[350px] text-gray-700">This is actively being worked on</span>
+                                <div class="flex-col bg-gray-200 flex-grow overflow-y-auto relative p-1 pl-2 pr-2 scroll-padding-b-[7px]"></div>
+                                <button class="text-gray-700 flex pt-2 pb-2 w-full pl-1 pr-1 h-3 gap-2 font-inherit font-semibold cursor-pointer select-none text-center items-center justify-between min-w-max-content bg-transparent shadow-none rounded-md border border-transparent no-underline px-3 gap-2 transition-colors duration-80 ease-in-out">
+                                    <span class="flex-grow-0 flex-shrink-1 flex-0 grid grid-cols-[min-content,auto,min-content] grid-rows-[auto] grid-areas-[leadingVisual,text,trailingVisual] items-center content-center justify-center text-gray-700">
+                                        <span class="mr-2 col-start-1 text-gray-700 flex pointer-events-none">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-plus inline-block select-none align-text-bottom overflow-visible fill-current w-4 h-4 text-gray-700 pointer-events-none" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg>
+                                        </span>
+                                        <span class="row-start-1 col-start-2 leading-[1.42857] whitespace-nowrap text-gray-700">Add item</span>
+                                    </span>
+                                </button>
+                            </div>
+                            <span class="mt-[-4px] pb-2 pl-4 pr-4 max-w-[350px] text-gray-700"></span>
+                            <div class="flex-col bg-gray-200 flex-grow overflow-y-auto relative p-1 pl-2 pr-2 scroll-padding-b-[7px]"></div>
+                            <button class="font-inherit font-semibold text-base cursor-pointer select-none text-center flex items-center justify-between min-w-[max-content] bg-transparent shadow-none rounded-md border border-transparent hover:text-gray-700 transition-all duration-300 ease-in-out p-4 h-[40px] gap-2 w-full focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-gray-300 text-gray-700"></button>
+                        </div>
+                        <div class="mr-2 w-[350px] min-w-[350px] flex flex-col overflow-hidden rounded-md bg-gray-200 transition-transform duration-75 border border-gray-300">
+                            <div class="flex-col flex-shrink-0 flex">
+                                <div class="bg-gray-200 items-start justify-between max-w-[350px] p-2 md:p-4 flex">
+                                    <div class="flex flex-wrap items-center max-w-[90%]">
+                                        <div class="border border-purple-800 border-2 w-4 h-4 rounded-full flex-shrink-0 mr-2"></div>
+                                        <div class="h-6 mt-1 mb-1 overflow-hidden mr-2">
+                                            <span class="text-base font-semibold leading-6 overflow-hidden truncate whitespace-nowrap">In review</span>
+                                        </div>
+                                        <span class="inline-block px-2 py-1 text-xs font-semibold leading-4 rounded-full bg-opacity-20 bg-gray-500 text-gray-700 mr-2 mt-2 mb-2">0 / 5</span>                                        
+                                        <span class="absolute w-1 h-1 p-0 m-n1 overflow-hidden whitespace-no-wrap border-0">&nbsp;(0 / 5)</span>
+                                        <span class="inline-flex items-center bg-transparent border border-gray-300 rounded-full font-semibold text-xs leading-4 whitespace-no-wrap p-1 px-2 mr-2 mt-2 mb-2 text-gray-700">Estimate: 0</span>
+                                    </div>
+                                    <div class="bg-gray-200 items-center justify-center flex">
+                                        <button class="sticky right-0 mr-1 text-gray-700 w-7 h-7 grid place-content-center font-semibold text-xs font-sans cursor-pointer select-none text-center bg-transparent shadow-none rounded-md border-1 border-solid border-transparent transition-colors duration-80 hover:text-black">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-kebab-horizontal inline-block select-none align-text-bottom text-gray-700 fill-current w-4 h-4 px-2 py-1 text-xs font-semibold leading-4 gap-1 cursor-pointer" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="mt-[-4px] pb-2 pl-4 pr-4 max-w-[350px] text-gray-700">This item is in review</span>
+                                <div class="flex-col bg-gray-200 flex-grow overflow-y-auto relative p-1 pl-2 pr-2 scroll-padding-b-[7px]"></div>
+                                <button class="text-gray-700 flex pt-2 pb-2 w-full pl-1 pr-1 h-3 gap-2 font-inherit font-semibold cursor-pointer select-none text-center items-center justify-between min-w-max-content bg-transparent shadow-none rounded-md border border-transparent no-underline px-3 gap-2 transition-colors duration-80 ease-in-out">
+                                    <span class="flex-grow-0 flex-shrink-1 flex-0 grid grid-cols-[min-content,auto,min-content] grid-rows-[auto] grid-areas-[leadingVisual,text,trailingVisual] items-center content-center justify-center text-gray-700">
+                                        <span class="mr-2 col-start-1 text-gray-700 flex pointer-events-none">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-plus inline-block select-none align-text-bottom overflow-visible fill-current w-4 h-4 text-gray-700 pointer-events-none" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg>
+                                        </span>
+                                        <span class="row-start-1 col-start-2 leading-[1.42857] whitespace-nowrap text-gray-700">Add item</span>
+                                    </span>
+                                </button>
+                            </div>
+                            <span class="mt-[-4px] pb-2 pl-4 pr-4 max-w-[350px] text-gray-700"></span>
+                            <div class="flex-col bg-gray-200 flex-grow overflow-y-auto relative p-1 pl-2 pr-2 scroll-padding-b-[7px]"></div>
+                            <button class="font-inherit font-semibold text-base cursor-pointer select-none text-center flex items-center justify-between min-w-[max-content] bg-transparent shadow-none rounded-md border border-transparent hover:text-gray-700 transition-all duration-300 ease-in-out p-4 h-[40px] gap-2 w-full focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-gray-300 text-gray-700"></button>
+                        </div>
+                        <div class="mr-2 w-[350px] min-w-[350px] flex flex-col overflow-hidden rounded-md bg-gray-200 transition-transform duration-75 border border-gray-300">
+                            <div class="flex-col flex-shrink-0 flex">
+                                <div class="bg-gray-200 items-start justify-between max-w-[350px] p-2 md:p-4 flex">
+                                    <div class="flex flex-wrap items-center max-w-[90%]">
+                                        <div class="border border-orange-800 border-2 w-4 h-4 rounded-full  flex-shrink-0 mr-2"></div>
+                                        <div class="h-6 mt-1 mb-1 overflow-hidden mr-2">
+                                            <span class="text-base font-semibold leading-6 overflow-hidden truncate whitespace-nowrap">Done</span>
+                                        </div>
+                                        <span class="inline-block px-2 py-1 text-xs font-semibold leading-4 rounded-full bg-opacity-20 bg-gray-500 text-gray-700 mr-2 mt-2 mb-2">0</span>                                        
+                                        <span class="absolute w-1 h-1 p-0 m-n1 overflow-hidden whitespace-no-wrap border-0">&nbsp;(0 / 5)</span>
+                                        <span class="inline-flex items-center bg-transparent border border-gray-300 rounded-full font-semibold text-xs leading-4 whitespace-no-wrap p-1 px-2 mr-2 mt-2 mb-2 text-gray-700">Estimate: 0</span>
+                                    </div>
+                                    <div class="bg-gray-200 items-center justify-center flex">
+                                        <button class="sticky right-0 mr-1 text-gray-700 w-7 h-7 grid place-content-center font-semibold text-xs font-sans cursor-pointer select-none text-center bg-transparent shadow-none rounded-md border-1 border-solid border-transparent transition-colors duration-80 hover:text-black">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-kebab-horizontal inline-block select-none align-text-bottom text-gray-700 fill-current w-4 h-4 px-2 py-1 text-xs font-semibold leading-4 gap-1 cursor-pointer" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="mt-[-4px] pb-2 pl-4 pr-4 max-w-[350px] text-gray-700">This item hasn't been started</span>
+                                <div class="flex-col bg-gray-200 flex-grow overflow-y-auto relative p-1 pl-2 pr-2 scroll-padding-b-[7px]"></div>
+                                <button class="text-gray-700 flex pt-2 pb-2 w-full pl-1 pr-1 h-3 gap-2 font-inherit font-semibold cursor-pointer select-none text-center items-center justify-between min-w-max-content bg-transparent shadow-none rounded-md border border-transparent no-underline px-3 gap-2 transition-colors duration-80 ease-in-out">
+                                    <span class="flex-grow-0 flex-shrink-1 flex-0 grid grid-cols-[min-content,auto,min-content] grid-rows-[auto] grid-areas-[leadingVisual,text,trailingVisual] items-center content-center justify-center text-gray-700">
+                                        <span class="mr-2 col-start-1 text-gray-700 flex pointer-events-none">
+                                            <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-plus inline-block select-none align-text-bottom overflow-visible fill-current w-4 h-4 text-gray-700 pointer-events-none" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg>
+                                        </span>
+                                        <span class="row-start-1 col-start-2 leading-[1.42857] whitespace-nowrap text-gray-700">Add item</span>
+                                    </span>
+                                </button>
+                            </div>
+                            <span class="mt-[-4px] pb-2 pl-4 pr-4 max-w-[350px] text-gray-700"></span>
+                            <div class="flex-col bg-gray-200 flex-grow overflow-y-auto relative p-1 pl-2 pr-2 scroll-padding-b-[7px]"></div>
+                            <button class="font-inherit font-semibold text-base cursor-pointer select-none text-center flex items-center justify-between min-w-[max-content] bg-transparent shadow-none rounded-md border border-transparent hover:text-gray-700 transition-all duration-300 ease-in-out p-4 h-[40px] gap-2 w-full focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-gray-300 text-gray-700"></button>
+                        </div>
+                        <div class="pr-6 min-w-[170px] flex">
+                            <span>
+                                <button class="w-10 h-10 gap-2 inline-grid place-content-center min-w-min text-sm font-medium cursor-pointer select-none text-center items-center text-gray-700 bg-gray-200 shadow-md rounded-md border border-gray-300 transition duration-300 ease-in-out hover:text-gray-900 hover:bg-gray-300">
+                                    <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-plus inline-block select-none overflow-visible fill-current w-4 h-4 font-medium text-sm cursor-pointer text-center flex items-center justify-between min-w-min text-gray-700 transition duration-300 ease-in-out hover:text-gray-900 leading-inherit tracking-normal" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bottom-15 absolute w-full pointer-events-none">
+                    </div>                      
+                </div>
+            </div>
+        </div>
     </div>
 </div>

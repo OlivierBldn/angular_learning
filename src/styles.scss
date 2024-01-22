@@ -11,3 +11,95 @@ button {
 input, textarea, select {
     @apply rounded border border-slate-200 p-2;
 }
+
+.topic {
+
+    &:not(.selected) {
+        @apply border-b border-solid border-gray-500 px-4 py-2 text-base leading-5 text-gray-300 no-underline border border-solid border-t-0 border-r-0 border-l-0 relative cursor-pointer flex items-center m-0 flex-grow w-48 max-w-max min-w-min ;
+    }
+
+    &.selected {
+        @apply border border-gray-300 rounded-tr-lg rounded-tl-lg border-b-0 bg-white px-4 py-2 text-base leading-5 text-gray-300 no-underline border border-solid relative cursor-pointer flex items-center m-0 flex-grow w-48 max-w-max min-w-min ;
+
+        &::before {
+            @apply content-none ;
+        }
+
+        &.no-shadow {
+            box-shadow: none !important;
+        }
+    }
+
+    &::before {
+        @apply content-[''] absolute bg-gray-300 w-[2px] h-5 right-full ;
+    }
+}
+
+// .topic-image {
+//     @apply text-sm px-4 py-2 leading-5 text-gray-800 no-underline bg-transparent border-t border-r border-l border-transparent relative cursor-pointer flex items-center m-0 flex-grow w-48 max-w-max;
+// }
+
+.topic-image {
+    @apply text-sm leading-5 text-gray-800 no-underline bg-transparent border-t border-r border-l border-transparent relative cursor-pointer flex items-center m-0 flex-grow w-48 max-w-max ;
+}
+
+.topic-image.selected {
+    @apply text-gray-800 ;
+}
+
+.topic-select.selected {
+    @apply text-gray-800 bg-gray-100 rounded-md border border-gray-300 ;
+}
+
+.topic-svg {
+    @apply inline-block select-none align-text-bottom overflow-visible text-gray-800 w-4 h-4 fill-gray-800 ;
+}
+
+.topic-svg.selected {
+    @apply border-gray-300 rounded-tr-lg rounded-tl-lg bg-white ;
+}
+
+// .topic-title {
+//     @apply pl-4 ml-4 overflow-hidden px-4 py-2 text-base leading-5 text-gray-800 no-underline bg-transparent border-t border-r border-l border-transparent relative cursor-pointer flex items-center m-0 flex-grow w-48 max-w-max;
+// }
+
+.topic-title {
+    @apply overflow-hidden text-base leading-5 text-gray-800 no-underline bg-transparent border-t border-r border-l border-transparent relative cursor-pointer flex items-center m-0 flex-grow w-48 max-w-max ;
+}
+
+.topic-title.selected {
+    @apply text-gray-800 ;
+}
+
+.topic-title-text {
+    @apply inline-block text-gray-800 whitespace-nowrap max-w-full pr-1 bg-transparent ;
+}
+
+.topic-title-select {
+    @apply text-gray-800 border-gray-300 rounded-tr-lg rounded-tl-lg ;
+}
+
+.button-topic {
+
+    &:not(.selected) {
+        @apply border-b border-solid border-gray-500 rounded-none px-4 py-2 text-base leading-5 text-gray-300 no-underline bg-transparent border border-solid border-0 relative cursor-pointer flex items-center m-0 flex-grow w-48 max-w-max min-w-min ;
+
+    }
+
+    &.selected {
+        @apply rounded-none px-4 py-2 text-base leading-5 text-gray-300 no-underline bg-transparent border border-solid border-0 relative cursor-pointer flex items-center m-0 flex-grow w-48 max-w-max min-w-min ;
+    }
+
+}
+
+.filtering-1 {
+    &:disabled {
+        @apply pointer-events-none cursor-not-allowed shadow-none text-gray-500 ;
+    }
+}
+
+.filtering-2 {
+    &:disabled {
+        @apply pointer-events-none cursor-not-allowed text-white text-opacity-80 bg-green-500 ;
+    }
+}
